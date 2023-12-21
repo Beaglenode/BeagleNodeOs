@@ -1,0 +1,16 @@
+[submodule "poky"]
+	path = poky
+	url = https://git.yoctoproject.org/poky
+	branch = dunfell
+[submodule "meta-ti"]
+	path = meta-ti
+	url = https://git.yoctoproject.org/meta-ti
+	branch = dunfell
+[submodule "meta-arm"]
+	path = meta-arm
+	url = git://git.yoctoproject.org/meta-arm
+	branch = dunfell
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = ../../openembedded/meta-openembedded.git
+	branch = dunfell
