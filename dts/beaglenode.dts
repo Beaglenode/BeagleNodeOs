@@ -1,0 +1,30 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target = <&uart2>;
+        __overlay__ {
+            pinctrl-names = "default";
+            pinctrl-0 = <>;
+            status = "disabled";
+        };
+    };
+
+    fragment@1 {
+        target = <&am33xx_pinmux>;
+        __overlay__ {
+            pinctrl-names = "default";
+            pinctrl-0 = <&my_pins>;
+
+            my_pins: pinmux_my_pins {
+                pinctrl-single,pins = <
+                    0x0e0 0x06
+                    0x0e8 0x06
+                    0x0e4 0x06
+                 >;
+            };
+
+        };
+    };
+};
